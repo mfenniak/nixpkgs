@@ -47,7 +47,22 @@ stdenv.mkDerivation rec {
     CONFIG_TLS=openssl
     CONFIG_TLSV11=y
     CONFIG_TLSV12=y
-    CONFIG_INTERNETWORKING=y
+
+    CONFIG_SAE=y
+    CONFIG_SAE_PK=y
+
+    CONFIG_OWE=y
+    CONFIG_OCV=y
+
+    # TKIP is considered insecure and upstream support will be removed in the future
+    CONFIG_NO_TKIP=y
+
+    # Misc
+    CONFIG_RADIUS_SERVER=y
+    CONFIG_FULL_DYNAMIC_VLAN=y
+    CONFIG_VLAN_NETLINK=y
+    CONFIG_GETRANDOM=y
+    CONFIG_INTERWORKING=y
     CONFIG_HS20=y
     CONFIG_ACS=y
     CONFIG_GETRANDOM=y
