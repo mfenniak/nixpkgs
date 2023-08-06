@@ -21762,8 +21762,8 @@ with pkgs;
     udev = systemdMinimal;
   };
 
-  libfilezilla = callPackage ../development/libraries/libfilezilla {
-    inherit (darwin.apple_sdk.frameworks) ApplicationServices;
+  libfilezilla = darwin.apple_sdk_11_0.callPackage ../development/libraries/libfilezilla {
+    inherit (darwin.apple_sdk_11_0.frameworks) ApplicationServices;
   };
 
   libfishsound = callPackage ../development/libraries/libfishsound { };
@@ -25467,7 +25467,7 @@ with pkgs;
     theme-spring = callPackage ../servers/icingaweb2/theme-spring { };
   };
 
-  irrd = callPackage ../servers/irrd { };
+  irrd = callPackage ../servers/misc/irrd { };
 
   inspircd = callPackage ../servers/irc/inspircd { };
 
@@ -27071,8 +27071,6 @@ with pkgs;
   linux_5_15_hardened = linuxKernel.kernels.linux_5_15_hardened;
   linuxPackages_6_1_hardened = linuxKernel.packages.linux_6_1_hardened;
   linux_6_1_hardened = linuxKernel.kernels.linux_6_1_hardened;
-  linuxPackages_6_3_hardened = linuxKernel.packages.linux_6_3_hardened;
-  linux_6_3_hardened = linuxKernel.kernels.linux_6_3_hardened;
   linuxPackages_6_4_hardened = linuxKernel.packages.linux_6_4_hardened;
   linux_6_4_hardened = linuxKernel.kernels.linux_6_4_hardened;
 
@@ -30688,13 +30686,13 @@ with pkgs;
   firefox-devedition-unwrapped = firefoxPackages.firefox-devedition;
   firefox-esr-102-unwrapped = firefoxPackages.firefox-esr-102;
   firefox-esr-115-unwrapped = firefoxPackages.firefox-esr-115;
-  firefox-esr-unwrapped = firefoxPackages.firefox-esr-102;
+  firefox-esr-unwrapped = firefoxPackages.firefox-esr-115;
 
   firefox = wrapFirefox firefox-unwrapped { };
   firefox-beta = wrapFirefox firefox-beta-unwrapped { };
   firefox-devedition = wrapFirefox firefox-devedition-unwrapped { };
 
-  firefox-esr = firefox-esr-102;
+  firefox-esr = firefox-esr-115;
   firefox-esr-102 = wrapFirefox firefox-esr-102-unwrapped { };
   firefox-esr-115 = wrapFirefox firefox-esr-115-unwrapped { };
 
