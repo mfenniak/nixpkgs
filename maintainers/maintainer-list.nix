@@ -8751,6 +8751,12 @@
       fingerprint = "5A9A 1C9B 2369 8049 3B48  CF5B 81A1 5409 4816 2372";
     }];
   };
+  l0b0 = {
+    email = "victor@engmark.name";
+    github = "l0b0";
+    githubId = 168301;
+    name = "Victor Engmark";
+  };
   l3af = {
     email = "L3afMeAlon3@gmail.com";
     matrix = "@L3afMe:matrix.org";
@@ -9372,6 +9378,15 @@
     github = "civodul";
     githubId = 1168435;
     name = "Ludovic Courtès";
+  };
+  ludovicopiero = {
+    email = "ludovicopiero@pm.me";
+    github = "ludovicopiero";
+    githubId = 44255157;
+    name = "Ludovico Piero";
+    keys = [{
+      fingerprint = "72CA 4F61 46C6 0DAB 6193  4D35 3911 DD27 6CFE 779C";
+    }];
   };
   lufia = {
     email = "lufia@lufia.org";
@@ -10239,6 +10254,12 @@
     github = "mfossen";
     githubId = 3300322;
     name = "Mitchell Fossen";
+  };
+  mfrw = {
+    email = "falakreyaz@gmail.com";
+    github = "mfrw";
+    githubId = 4929861;
+    name = "Muhammad Falak R Wani";
   };
   mgdelacroix = {
     email = "mgdelacroix@gmail.com";
