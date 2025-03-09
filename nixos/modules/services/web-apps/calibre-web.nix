@@ -3,7 +3,7 @@
 let
   cfg = config.services.calibre-web;
 
-  inherit (lib) concatStringsSep mkEnableOption mkIf mkOption optional optionalString types;
+  inherit (lib) concatStringsSep mkEnableOption mkIf mkOption optional optionals optionalString types;
 in
 {
   options = {
